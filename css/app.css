@@ -1,0 +1,109 @@
+body{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    float: top;
+    width: 100%;
+    background-color: #00897b;
+    height: 5vh;
+    padding: 10px 0;
+}
+header h1{
+    color:#ffffff;
+    margin: 0;
+}
+aside{
+    float: left;
+    height: 85vh;
+    width: 15%;
+    background-color: #80cbc4;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+nav a{
+    padding: 20px 0;
+    text-decoration: none;
+    color:#000000;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    text-align: center;
+    height: 3vh;
+}
+.divflex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover{
+    background-color: #26a69a;
+}
+main{
+    float: right;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    background-color: #e0f2f1;
+    height: 85vh;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #00897b;
+    color:#ffffff;
+    height: 10vh;
+}
+#workflow{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#workflow button{
+    background-color: #00897b;
+    border: 1px solid #00897b;
+    border-radius: 5px;
+    width: 50%;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #000000;
+}
+#search{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+    text-align: center;
+    animation-name: entrada;
+    animation-duration: 1s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+}
+@keyframes entrada{
+    0%{
+        right: -400px;
+    }
+    100%{
+        right: 0;
+    }
+}
