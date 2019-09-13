@@ -5,3 +5,7 @@ function mostrarPanel(guia){
         document.getElementById("search").style.display = "none";
     }
 }
+
+function redirect(){
+    window.location.href("index.html");
+}
